@@ -20,3 +20,16 @@ function logger() {
 logger();
 logger();
 logger();
+
+/* Function with two inputs and one output! */
+function fruitProcessor(apples, oranges) {
+  console.log(apples, oranges);
+  const juices = `Juice with ${apples} apples and ${oranges} oranges.`;
+  return juices;
+}
+
+console.log(fruitProcessor(5, 0)); /* Juice with 5 apples and 0 oranges. */
+/* OR the following method: */
+const appleJuice = fruitProcessor(5, 0);
+/* Juice with 5 apples and 0 oranges. */
+console.log(appleJuice);
