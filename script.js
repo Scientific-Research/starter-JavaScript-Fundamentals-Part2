@@ -33,3 +33,6 @@ console.log(fruitProcessor(5, 0)); /* Juice with 5 apples and 0 oranges. */
 const appleJuice = fruitProcessor(5, 0);
 /* Juice with 5 apples and 0 oranges. */
 console.log(appleJuice);
+
+const appleOrangeJuice = fruitProcessor(2, 4);
+console.log(appleOrangeJuice);
