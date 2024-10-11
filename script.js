@@ -10,3 +10,13 @@ if (hasDriversLicense) console.log("I can drive :D");
 // const private = 546;
 
 // const if = 345;
+
+/* Functions */
+// calling / running / invoking:
+function logger() {
+  console.log("My name is Maximilian!");
+}
+
+logger();
+logger();
+logger();
