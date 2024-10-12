@@ -110,17 +110,18 @@ const yearsUntilRetirement = (birthYear, firstName) => {
   const age = calcAge_1(birthYear);
   const retirement = 65 - age;
 
-  let output;
   if (retirement > 0) {
     // console.log(`You have to work still ${retirement} years till retirement!`);
-    return (output = `${firstName} has to work still for next ${retirement} years till retirement!`);
+    const output = `${firstName} has to work still for next ${retirement} years till retirement!`;
+    return output;
   } else {
     // console.log(`You are laready retired since ${retirement} years ago!`);
-    return (output = `${firstName} is already retired since ${Math.abs(
+    const output = `${firstName} is already retired since ${Math.abs(
       retirement
-    )} years ago!`);
+    )} years ago!`;
+    return output;
   }
 };
 
 console.log(yearsUntilRetirement(1991, "Jonas"));
-console.log(yearsUntilRetirement(1980, "Mike"));
+console.log(yearsUntilRetirement(1950, "Mike"));
