@@ -131,5 +131,21 @@ const friend1 = "Michael";
 const friend2 = "Steven";
 const friend3 = "Peter";
 
-const friend = ["Michael", "Steven", "Pete"];
+const friend = ["Michael", "Steven", "Peter"];
 console.log(friend);
+
+/*creating an array using new word!*/
+const years = new Array(1991, 1984, 2008, 2020);
+const date = new Date("01.06.2056"); /* creating a new time using new word! */
+console.log(date);
+console.log(years);
+
+/* Getting the elements out of an Array: */
+console.log(friend[0]);
+console.log(friend[1]);
+console.log(friend[2]);
+
+console.log(years[0]);
+console.log(years[1]);
+console.log(years[2]);
+console.log(years[3]);
