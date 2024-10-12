@@ -56,3 +56,13 @@ const calcAge_new = (birthyear) => {
 
 const age_new = calcAge_new(1980);
 console.log(`Your are ${age_new} years old!`);
+
+/* or writing the same function but without name => a function without name! */
+const calcAge_neu = function (birthyear) {
+  const currentYear = new Date().getFullYear();
+  const yourAge = currentYear - birthyear;
+  return yourAge;
+};
+
+const age_neu = calcAge(1980);
+console.log(`Your are ${age_neu} years old!`);
