@@ -66,3 +66,18 @@ const calcAge_neu = function (birthyear) {
 
 const age_neu = calcAge(1980);
 console.log(`Your are ${age_neu} years old!`);
+
+/* How many years is still remaining till retirement? calculate the year using arrow function:*/
+
+const yearsTillRetirement = (yourBirthday) => {
+  const yearOfRetirement = 67;
+  const currentYear = new Date().getFullYear();
+  const yourAge = currentYear - yourBirthday;
+  const yearsTillRetirement = yearOfRetirement - yourAge;
+  return yearsTillRetirement;
+};
+
+const yearsTillRetirement_result = yearsTillRetirement(1980);
+console.log(
+  `The years till your retirement: ${yearsTillRetirement_result} years!`
+);
