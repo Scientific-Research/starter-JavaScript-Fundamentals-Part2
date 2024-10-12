@@ -170,3 +170,13 @@ const maximilian = [
 ];
 console.log(maximilian);
 console.log(maximilian.length);
+
+/* An exercise for array: */
+const calcAge_2 = (years_new) => {
+  return 2037 - years_new;
+};
+
+const years_new = [1990, 1967, 2002, 2010, 2018];
+console.log(calcAge_2(years_new[0]));
+console.log(calcAge_2(years_new[1]));
+console.log(calcAge_2(years_new[years_new.length - 1]));
