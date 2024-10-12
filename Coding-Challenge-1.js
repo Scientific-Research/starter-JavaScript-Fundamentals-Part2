@@ -4,16 +4,16 @@ const calcAverage = (a, b, c) => {
   return `${scoreAverage}`;
 };
 
-const avgDolphins = calcAverage(85, 54, 41);
-const avgKoalas = calcAverage(23, 34, 27);
+const avgDolphins = calcAverage(44, 23, 71);
+const avgKoalas = calcAverage(65, 54, 49);
 console.log(avgDolphins, avgKoalas);
 
 /* 3. */
 const checkWinner = (avgDolphins, avgKoalas) => {
   if (avgDolphins >= 2 * avgKoalas) {
-    return `Dolphins team wins (${avgDolphins} vs. ${avgKoalas})`;
+    return `Dolphins team wins 🏆 (${avgDolphins} vs. ${avgKoalas})`;
   } else if (avgKoalas >= 2 * avgDolphins) {
-    return `Koalas team wins (${avgKoalas} vs. ${avgDolphins})`;
+    return `Koalas team wins 🏆 (${avgKoalas} vs. ${avgDolphins})`;
   } else {
     return `No team wins!`;
   }
