@@ -144,8 +144,12 @@ console.log(years);
 console.log(friend[0]);
 console.log(friend[1]);
 console.log(friend[2]);
+console.log(`Number of elements in this array: ${friend.length}`);
+console.log(friend[friend.length - 1]);
 
 console.log(years[0]);
 console.log(years[1]);
 console.log(years[2]);
 console.log(years[3]);
+console.log(`Number of elements in this array: ${years.length}`);
+console.log(years[years.length - 1]);
