@@ -38,21 +38,21 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
 /* Function Declaration vs Function Expression: */
-function Birthday(birthyear) {
+function calcAge(birthyear) {
   const currentYear = new Date().getFullYear();
   const yourAge = currentYear - birthyear;
   return yourAge;
 }
 
-const age = Birthday(1980);
+const age = calcAge(1980);
 console.log(`Your are ${age} years old!`);
 
 /* Write the above function using the arrow function: */
-const Birthday_new = (birthyear) => {
+const calcAge_new = (birthyear) => {
   const currentYear = new Date().getFullYear();
   const yourAge = currentYear - birthyear;
   return yourAge;
 };
 
-const age_new = Birthday_new(1980);
+const age_new = calcAge_new(1980);
 console.log(`Your are ${age_new} years old!`);
