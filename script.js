@@ -100,3 +100,27 @@ const fruitProcessor_new = (apples, oranges) => {
 };
 
 console.log(fruitProcessor_new(2, 3));
+
+/* a new example about the calling a function inside another function: */
+const calcAge_1 = (birthyear) => {
+  return 2037 - birthyear;
+};
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = calcAge_1(birthYear);
+  const retirement = 65 - age;
+
+  let output;
+  if (retirement > 0) {
+    // console.log(`You have to work still ${retirement} years till retirement!`);
+    return (output = `${firstName} has to work still for next ${retirement} years till retirement!`);
+  } else {
+    // console.log(`You are laready retired since ${retirement} years ago!`);
+    return (output = `${firstName} is already retired since ${Math.abs(
+      retirement
+    )} years ago!`);
+  }
+};
+
+console.log(yearsUntilRetirement(1991, "Jonas"));
+console.log(yearsUntilRetirement(1980, "Mike"));
