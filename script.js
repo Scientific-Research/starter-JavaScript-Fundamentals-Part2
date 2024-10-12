@@ -85,3 +85,18 @@ const yearsTillRetirement_result_1 = yearsTillRetirement(1980, "Maximilian");
 // );
 console.log(yearsTillRetirement_result);
 console.log(yearsTillRetirement_result_1);
+
+/* Calling a function inside another function: */
+const cutPieces = (fruit) => {
+  return fruit * 4;
+};
+
+const fruitProcessor_new = (apples, oranges) => {
+  const applePieces = cutPieces(apples);
+  const orangePieces = cutPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+  return juice;
+};
+
+console.log(fruitProcessor_new(2, 3));
