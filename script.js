@@ -180,3 +180,11 @@ const years_new = [1990, 1967, 2002, 2010, 2018];
 console.log(calcAge_2(years_new[0]));
 console.log(calcAge_2(years_new[1]));
 console.log(calcAge_2(years_new[years_new.length - 1]));
+
+/* or put the results in an array: */
+const ages = [
+  calcAge_2(years_new[0]),
+  calcAge_2(years_new[1]),
+  calcAge_2(years_new[years_new.length - 1]),
+];
+console.log(ages);
