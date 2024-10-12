@@ -36,3 +36,13 @@ console.log(appleJuice);
 
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
+
+/* Function Declaration vs Function Expression: */
+function Birthday(birthyear) {
+  const currentYear = new Date().getFullYear();
+  const yourAge = currentYear - birthyear;
+  return yourAge;
+}
+
+const age = Birthday(1980);
+console.log(`Your are ${age} years old!`);
