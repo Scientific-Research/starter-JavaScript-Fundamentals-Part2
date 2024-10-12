@@ -69,15 +69,17 @@ console.log(`Your are ${age_neu} years old!`);
 
 /* How many years is still remaining till retirement? calculate the year using arrow function:*/
 
-const yearsTillRetirement = (yourBirthday) => {
+const yearsTillRetirement = (yourBirthday, firsName) => {
   const yearOfRetirement = 67;
   const currentYear = new Date().getFullYear();
   const yourAge = currentYear - yourBirthday;
   const yearsTillRetirement = yearOfRetirement - yourAge;
-  return yearsTillRetirement;
+  // return yearsTillRetirement;
+  return `${firsName} has ${yearsTillRetirement} years till retirement!`;
 };
 
-const yearsTillRetirement_result = yearsTillRetirement(1980);
-console.log(
-  `The years till your retirement: ${yearsTillRetirement_result} years!`
-);
+const yearsTillRetirement_result = yearsTillRetirement(1980, "Maximilian");
+// console.log(
+//   `The years till your retirement: ${yearsTillRetirement_result} years!`
+// );
+console.log(yearsTillRetirement_result);
