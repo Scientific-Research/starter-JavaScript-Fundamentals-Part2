@@ -157,3 +157,16 @@ console.log(years[2]);
 console.log(years[3]);
 console.log(`Number of elements in this array: ${years.length}`);
 console.log(years[years.length - 1]);
+
+/* Array can store all kind of information: */
+/* we can put string, number, variable, expression and even another array inside this array: */
+const firstName = "Maximilian";
+const maximilian = [
+  firstName,
+  "Karimi",
+  new Date().getFullYear() - 1980,
+  "Engineer",
+  friend,
+];
+console.log(maximilian);
+console.log(maximilian.length);
