@@ -46,3 +46,13 @@ function Birthday(birthyear) {
 
 const age = Birthday(1980);
 console.log(`Your are ${age} years old!`);
+
+/* Write the above function using the arrow function: */
+const Birthday_new = (birthyear) => {
+  const currentYear = new Date().getFullYear();
+  const yourAge = currentYear - birthyear;
+  return yourAge;
+};
+
+const age_new = Birthday_new(1980);
+console.log(`Your are ${age_new} years old!`);
