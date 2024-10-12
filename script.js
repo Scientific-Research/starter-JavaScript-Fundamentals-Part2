@@ -144,8 +144,12 @@ console.log(years);
 console.log(friend[0]);
 console.log(friend[1]);
 console.log(friend[2]);
+
 console.log(`Number of elements in this array: ${friend.length}`);
 console.log(friend[friend.length - 1]);
+friend[2] = "Jay";
+console.log(friend);
+// friend = ["Bob", "Alice", "Jack"]; This is not possible-we can not change the whole array!! but we can only change an element inside an array like what we did above => friend[2] = "Jay";
 
 console.log(years[0]);
 console.log(years[1]);
