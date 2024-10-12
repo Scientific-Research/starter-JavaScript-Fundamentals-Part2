@@ -78,8 +78,10 @@ const yearsTillRetirement = (yourBirthday, firsName) => {
   return `${firsName} has ${yearsTillRetirement} years till retirement!`;
 };
 
-const yearsTillRetirement_result = yearsTillRetirement(1980, "Maximilian");
+const yearsTillRetirement_result = yearsTillRetirement(1991, "Jonas");
+const yearsTillRetirement_result_1 = yearsTillRetirement(1980, "Maximilian");
 // console.log(
 //   `The years till your retirement: ${yearsTillRetirement_result} years!`
 // );
 console.log(yearsTillRetirement_result);
+console.log(yearsTillRetirement_result_1);
