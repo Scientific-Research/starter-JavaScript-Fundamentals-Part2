@@ -291,4 +291,8 @@ console.log(jonas["first" + nameKey] + " " + jonas["last" + nameKey]);
 // console.log(jonas."first" + nameKey);
 /* it doesn't work using . notation => it works only with bracket[] notation! */
 
+const interestedIn = prompt(
+  "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends"
+);
 
+console.log(interestedIn);
