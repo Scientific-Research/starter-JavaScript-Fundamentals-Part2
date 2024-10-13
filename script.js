@@ -171,20 +171,38 @@ const maximilian = [
 console.log(maximilian);
 console.log(maximilian.length);
 
-/* An exercise for array: */
+/* An exercise for array using forEach:: */
 const calcAge_2 = (years_new) => {
-  return 2037 - years_new;
+  const age_result = [];
+  if (!Array.isArray(years_new)) {
+    console.error("years_new is not an array");
+    return;
+  }
+  years_new.forEach((element) => {
+    const age = 2037 - element;
+    age_result.push(age);
+  });
+  return age_result;
 };
 
 const years_new = [1990, 1967, 2002, 2010, 2018];
-console.log(calcAge_2(years_new[0]));
-console.log(calcAge_2(years_new[1]));
-console.log(calcAge_2(years_new[years_new.length - 1]));
+const result = calcAge_2(years_new);
+console.log(result);
+
+/* /////////////////////////////////// */
+const calcAge_3 = (birthyear) => {
+  return 2037 - birthyear;
+};
+
+const years_new_1 = [1990, 1967, 2002, 2010, 2018];
+console.log(calcAge_3(years_new_1[0]));
+console.log(calcAge_3(years_new_1[1]));
+console.log(calcAge_3(years_new_1[years_new_1.length - 1]));
 
 /* or put the results in an array: */
 const ages = [
-  calcAge_2(years_new[0]),
-  calcAge_2(years_new[1]),
-  calcAge_2(years_new[years_new.length - 1]),
+  calcAge_3(years_new_1[0]),
+  calcAge_3(years_new_1[1]),
+  calcAge_3(years_new_1[years_new_1.length - 1]),
 ];
 console.log(ages);
