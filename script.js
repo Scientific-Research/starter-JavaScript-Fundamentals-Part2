@@ -230,3 +230,8 @@ console.log(friend_neu, removedElement1, removedElement2);
 const removedTheFirstElement = friend_neu.shift();
 console.log(friend_neu);
 console.log(removedTheFirstElement);
+
+/* how to find the index of an element in an array: */
+console.log(friend_neu.indexOf("Steven"));
+console.log(friend_neu.indexOf("Abbas"));
+/* index is -1 because this element is not in the array! */
