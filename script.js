@@ -210,7 +210,8 @@ console.log(ages);
 /* Basic Array Operations: */
 const friend_neu = ["Michael", "Steven", "Peter"];
 /* the original array stay always without any changes(immutable => unchangable!) and push mutate(make a copy) from original array and add the new element to the end of this new array! */
-/* push add this element to the end of the new array! */
+
+/* push(add) add this element to the end of the new array! */
 const newLength = friend_neu.push("Abdol");
 console.log(friend_neu);
 console.log(newLength); /* give us the length of the new array! */
@@ -219,5 +220,8 @@ console.log(newLength); /* give us the length of the new array! */
 friend_neu.unshift("Ghazanfar");
 console.log(friend_neu);
 
-friend_neu.pop(); /* remove the last elemnet from the new array! */
-console.log(friend_neu);
+/* remove the last elemnet from the new array! */
+const removedElement1 =
+  friend_neu.pop(); /* send us not the length of the new array, but the name of the removed elemnet back! */
+const removedElement2 = friend_neu.pop();
+console.log(friend_neu, removedElement1, removedElement2);
