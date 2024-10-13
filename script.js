@@ -254,3 +254,23 @@ if (friend_neu.includes(name_includes)) {
 } else {
   console.log(`${name_includes} is not in the list!`);
 }
+
+/* Objects in JS: */
+const JonsArray = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+console.log(JonsArray);
+
+/* and now converting the above array to an Object! */
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+};
+console.log(jonas);
