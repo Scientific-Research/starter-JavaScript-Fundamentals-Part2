@@ -274,3 +274,11 @@ const jonas = {
   friends: ["Michael", "Peter", "Steven"],
 };
 console.log(jonas);
+
+/* How to retrieve data from an object and how to change the data ina an object using both . notation and [] notation: */
+
+// const lastName = jonas.lastName;
+const lastName = jonas["lastName"];
+console.log(lastName);
+
+
