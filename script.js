@@ -210,8 +210,13 @@ console.log(ages);
 /* Basic Array Operations: */
 const friend_neu = ["Michael", "Steven", "Peter"];
 /* the original array stay always without any changes(immutable => unchangable!) and push mutate(make a copy) from original array and add the new element to the end of this new array! */
-friend_neu.push("Abdol"); /* add this element to the end of the new array! */
-friend_neu.push("Asghar");
+/* push add this element to the end of the new array! */
+const newLength = friend_neu.push("Abdol");
+console.log(friend_neu);
+console.log(newLength); /* give us the length of the new array! */
+
+/* How to add the element at the beginning of the array: */
+friend_neu.unshift("Ghazanfar");
 console.log(friend_neu);
 
 friend_neu.pop(); /* remove the last elemnet from the new array! */
