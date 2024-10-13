@@ -281,7 +281,14 @@ console.log(jonas);
 const lastName = jonas["lastName"];
 console.log(lastName);
 
+/* using [] notation*/
 const nameKey = "Name";
 console.log(jonas["first" + nameKey]);
 console.log(jonas["last" + nameKey]);
 console.log(jonas["first" + nameKey] + " " + jonas["last" + nameKey]);
+
+/* the same using . notation: */
+// console.log(jonas."first" + nameKey);
+/* it doesn't work using . notation => it works only with bracket[] notation! */
+
+
