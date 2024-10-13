@@ -295,4 +295,8 @@ const interestedIn = prompt(
   "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends"
 );
 
-console.log(interestedIn);
+// console.log(interestedIn);
+// console.log(jonas["interestedIn"]);
+// console.log(interestedIn["firstName"]);
+console.log(jonas[interestedIn]);
+/* we don't need here the quotation, because what come out of the prompt is string and we don't need to convert it to string again! */
