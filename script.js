@@ -236,7 +236,13 @@ console.log(friend_neu.indexOf("Steven"));
 console.log(friend_neu.indexOf("Abbas"));
 /* index is -1 because this element is not in the array! */
 
+friend_neu.push(23);
+console.log(friend_neu);
+
 /* a similar but a more mordern one: */
-console.log(friend_neu.includes("Abbas"));
+console.log(friend_neu.includes("Abbas")); /* false */
 /* it doesn't give us the index of the element, but gives us only true is the element is available in the array and false if the element is not available in the array! */
-console.log(friend_neu.includes("Steven"));
+console.log(friend_neu.includes("Steven")); /* true */
+console.log(friend_neu.includes("23")); /* false */
+/* includes does a strict equality === that's why doesn't accept the string and accepts only the number!*/
+console.log(friend_neu.includes(23)); /* true */
