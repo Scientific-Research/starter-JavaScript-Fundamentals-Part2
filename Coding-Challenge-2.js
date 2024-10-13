@@ -1,11 +1,15 @@
 /* 1. */
 let tip;
 const calcTip = (bill) => {
-  if (bill >= 50 && bill <= 300) {
-    return (tip = bill * 0.15);
-  } else {
-    return (tip = bill * 0.2);
-  }
+  /* using if-else */
+  // if (bill >= 50 && bill <= 300) {
+  //   return (tip = bill * 0.15);
+  // } else {
+  //   return (tip = bill * 0.2);
+  // }
+
+  /* using ternary operator: */
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
 
 const tip_final = calcTip(100);
