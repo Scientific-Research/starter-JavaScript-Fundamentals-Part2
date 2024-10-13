@@ -225,3 +225,8 @@ const removedElement1 =
   friend_neu.pop(); /* send us not the length of the new array, but the name of the removed elemnet back! */
 const removedElement2 = friend_neu.pop();
 console.log(friend_neu, removedElement1, removedElement2);
+
+/* how to remove the first elemnet in the array: */
+const removedTheFirstElement = friend_neu.shift();
+console.log(friend_neu);
+console.log(removedTheFirstElement);
