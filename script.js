@@ -281,4 +281,7 @@ console.log(jonas);
 const lastName = jonas["lastName"];
 console.log(lastName);
 
-
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
+console.log(jonas["first" + nameKey] + " " + jonas["last" + nameKey]);
