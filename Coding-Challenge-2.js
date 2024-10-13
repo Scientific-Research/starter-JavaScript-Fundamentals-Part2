@@ -22,9 +22,11 @@ const tip_final_2 = calcTip(bills[1]);
 const tip_final_3 = calcTip(bills[2]);
 
 /* 3. creating the tip array containing all the above three tips: */
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]; or the following:
 const tips = [tip_final_1, tip_final_2, tip_final_3];
 console.log(tips);
 
 /* 4. create a new array called 'total' containing the bill + tip */
-const total = [125 + tip_final_1, 555 + tip_final_2, 44 + tip_final_3];
+// const total = [125 + tip_final_1, 555 + tip_final_2, 44 + tip_final_3]; Or the following:
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(total);
