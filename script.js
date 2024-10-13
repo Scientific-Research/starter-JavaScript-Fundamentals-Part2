@@ -235,3 +235,8 @@ console.log(removedTheFirstElement);
 console.log(friend_neu.indexOf("Steven"));
 console.log(friend_neu.indexOf("Abbas"));
 /* index is -1 because this element is not in the array! */
+
+/* a similar but a more mordern one: */
+console.log(friend_neu.includes("Abbas"));
+/* it doesn't give us the index of the element, but gives us only true is the element is available in the array and false if the element is not available in the array! */
+console.log(friend_neu.includes("Steven"));
