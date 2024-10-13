@@ -331,6 +331,10 @@ console.log(jonas.firstName);
 console.log(jonas.friends.length);
 console.log(jonas.friends[0]);
 
+console.log(
+  `${jonas.firstName} has ${jonas.friends.length} friends and his best friend is called ${jonas.friends[0]}!`
+);
+
 // const Jonas = {
 //   numberOfFriends: 3,
 //   nameOFHisBestFriend: "Michael",
