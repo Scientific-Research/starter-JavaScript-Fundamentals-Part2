@@ -323,3 +323,30 @@ jonas.twitter = "@blablabla";
 jonas["hobbit"] = "Music";
 jonas["E-Mail"] = "jonas@example.com";
 console.log(jonas);
+
+/* a small challenge for me: */
+/* "Jonas has 3 friends, and his best friend is called Michael!" */
+
+console.log(jonas.firstName);
+console.log(jonas.friends.length);
+console.log(jonas.friends[0]);
+
+// const Jonas = {
+//   numberOfFriends: 3,
+//   nameOFHisBestFriend: "Michael",
+// };
+
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: "Schmedtmann",
+//   age: 2037 - 1991,
+//   job: "teacher",
+//   friends: ["Michael", "Peter", "Steven"],
+// };
+// console.log(jonas);
+
+// console.log(Jonas.numberOfFriends);
+// console.log(Jonas["numberOfFriends"]);
+
+// console.log(Jonas.nameOFHisBestFriend);
+// console.log(Jonas["nameOFHisBestFriend"]);
