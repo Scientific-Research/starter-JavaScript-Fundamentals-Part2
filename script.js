@@ -246,3 +246,11 @@ console.log(friend_neu.includes("Steven")); /* true */
 console.log(friend_neu.includes("23")); /* false */
 /* includes does a strict equality === that's why doesn't accept the string and accepts only the number!*/
 console.log(friend_neu.includes(23)); /* true */
+
+/* a new example of using includes in a if condition:*/
+const name_includes = "Michael";
+if (friend_neu.includes(name_includes)) {
+  console.log(`${name_includes} is in the list!`);
+} else {
+  console.log(`${name_includes} is not in the list!`);
+}
