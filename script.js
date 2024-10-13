@@ -298,5 +298,10 @@ const interestedIn = prompt(
 // console.log(interestedIn);
 // console.log(jonas["interestedIn"]);
 // console.log(interestedIn["firstName"]);
-console.log(jonas[interestedIn]);
-/* we don't need here the quotation, because what come out of the prompt is string and we don't need to convert it to string again! */
+
+if (!jonas[interestedIn]) {
+  console.log("We don't have such a property!");
+} else {
+  console.log(jonas[interestedIn]);
+  /* we don't need here the quotation, because what come out of the prompt is string and we don't need to convert it to string again! */
+}
