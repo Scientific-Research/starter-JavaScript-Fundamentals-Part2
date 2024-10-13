@@ -291,9 +291,12 @@ console.log(jonas["first" + nameKey] + " " + jonas["last" + nameKey]);
 // console.log(jonas."first" + nameKey);
 /* it doesn't work using . notation => it works only with bracket[] notation! */
 
-const interestedIn = prompt(
-  "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends"
-);
+// const interestedIn = prompt(
+//   "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends"
+// );
+
+const interestedIn =
+  "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends";
 
 // console.log(interestedIn);
 // console.log(jonas["interestedIn"]);
@@ -305,3 +308,18 @@ if (!jonas[interestedIn]) {
   console.log(jonas[interestedIn]);
   /* we don't need here the quotation, because what come out of the prompt is string and we don't need to convert it to string again! */
 }
+
+/* how we can add a new property to the object using bracket and dot notations */
+// console.log(jonas);
+// const jonasCopy = { ...jonas };
+// console.log((jonasCopy.age = 23));
+// console.log((jonasCopy.firstName = "Akbar"));
+// console.log(jonasCopy);
+
+// jonas["location"] = "Germany";
+// jonas.hobbit = "Music";
+jonas.location = "Germany";
+jonas.twitter = "@blablabla";
+jonas["hobbit"] = "Music";
+jonas["E-Mail"] = "jonas@example.com";
+console.log(jonas);
