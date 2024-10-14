@@ -466,8 +466,11 @@ for (let j = 0; j < JonsArray_new.length; j++) {
   /* 1. first method */
   // typeArray[j] = typeof JonsArray_new[j];
 
-  /* 2. second method */
-  typeArray.push(typeof JonsArray_new[j]);
+  /* 2. second method => push method adds the new element to the end of the array!*/
+  // typeArray.push(typeof JonsArray_new[j]);
+
+  /* 3. third method => unshift puts the type of the last element of the array as first element to the new array and so on! */
+  typeArray.unshift(typeof JonsArray_new[j]);
 }
 console.log(typeArray);
 
