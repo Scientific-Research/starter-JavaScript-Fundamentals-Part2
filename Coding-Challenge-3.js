@@ -6,7 +6,7 @@ const mark = {
   height: 1.69,
 
   calcBMI: function () {
-    this.bmi = (`${this.mass}` / `${this.height ** 2}`).toFixed(2);
+    this.bmi = (this.mass / this.height ** 2).toFixed(2);
     /* this.bmi creates bmi property in mark object and we can access that like other properties in this object using "this" keyword!*/
     return this.bmi;
     /* we return it to call it directly without using calcBMI function, because it is already a property of this object like other properties like firsName, lastName,... */
@@ -20,7 +20,7 @@ const john = {
   height: 1.95,
 
   calcBMI: function () {
-    this.bmi = (`${this.mass}` / `${this.height ** 2}`).toFixed(2);
+    this.bmi = (this.mass / this.height ** 2).toFixed(2);
     /* this.bmi creates bmi property in mark object and we can access that like other properties in this object using "this" keyword!*/
     return this.bmi;
     /* we return it to call it directly without using calcBMI function, because it is already a property of this object like other properties like firsName, lastName,... */
