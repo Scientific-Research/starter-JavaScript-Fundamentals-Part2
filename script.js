@@ -568,12 +568,16 @@ while (f <= 10) {
 /* roll a dice till getting the SIX and then it stops: */
 console.log("--------ROLLING A DICE:----------");
 
-let d = Math.floor(Math.random() * 6) + 1;
+// let d = Math.floor(Math.random() * 6) + 1;
+let d = 1; /* as a default value instead of a random number!*/
 console.log(d);
 
-while (d !== 6) {
+while (d < 6) {
   console.log("Dice value is: " + d);
   // d = d + 1;
   d = Math.floor(Math.random() * 6) + 1;
   /* just for the sake of a condition and stop the infinite loop, otherwise, we will have an infinite loop! */
+  d === 6
+    ? console.log("we got the number 6")
+    : console.log("we have to continue...");
 }
