@@ -525,3 +525,18 @@ for (let i = 0; i < JonsArray_new.length; i++) {
   }
   console.log(JonsArray_new[i], typeof JonsArray_new[i]);
 }
+
+/* Looping Backwards and loop in loop */
+const JonsArray_new_1 = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  "sldkjflksd",
+  true,
+];
+console.log("-----Looping Backwards-------");
+for (let i = JonsArray_new_1.length; i >= 0; i--) {
+  console.log(JonsArray_new_1[i], typeof JonsArray_new_1[i]);
+}
