@@ -436,3 +436,9 @@ console.log(jonas_new["calcAge"]());
 
 // console.log(jonas_new.getSummary());
 console.log(jonas_new.getSummary());
+
+/* Starting with loops: */
+for (let i = 1; i <= 10; i++) {
+  // console.log("Lifting weights repetition " + i + "🏋️‍♂️");
+  console.log(`Lifting weights repetition ${i} 🏋️‍♂️`);
+}
