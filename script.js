@@ -487,6 +487,10 @@ const age_neue = [];
 
 for (let i = 0; i < years_neu.length; i++) {
   const currentYear = new Date().getFullYear();
-  age_neue[i] = currentYear - years_neu[i];
+  /* 1. first method */
+  // age_neue[i] = currentYear - years_neu[i];
+
+  /* 2. second method */
+  age_neue.push(currentYear - years_neu[i]);
 }
 console.log(age_neue);
