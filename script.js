@@ -442,3 +442,17 @@ for (let i = 1; i <= 10; i++) {
   // console.log("Lifting weights repetition " + i + "🏋️‍♂️");
   console.log(`Lifting weights repetition ${i} 🏋️‍♂️`);
 }
+
+/* loop through arrays: */
+/* Arrays in JS: */
+const JonsArray_new = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+for (let i = 0; i < JonsArray_new.length; i++) {
+  console.log(`${JonsArray_new[i]}`);
+}
