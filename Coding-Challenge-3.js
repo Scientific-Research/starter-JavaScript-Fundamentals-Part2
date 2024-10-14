@@ -37,20 +37,14 @@ console.log(john.bmi);
 console.log(mark.bmi);
 
 /* 3. */
-/* using Ternary operator: */
+/* using Ternary operator with bmi property instead of calcBMI() method(function) => anyway, the result at the end is the same! */
 console.log(
-  `${mark.calcBMI()}` > `${john.calcBMI()}`
-    ? `${mark.firstName} ${
-        mark.lastName
-      }'s BMI (${mark.calcBMI()}) is higher than ${john.firstName} ${
-        john.lastName
-      }'s (${john.calcBMI()})!`
-    : `${john.firstName}'s BMI (${john.calcBMI()}) is higher than ${
-        mark.firstName
-      }'s (${mark.calcBMI()})!`
+  `${mark.bmi}` > `${john.bmi}`
+    ? `${mark.firstName} ${mark.lastName}'s BMI (${mark.bmi}) is higher than ${john.firstName} ${john.lastName}'s (${john.bmi})!`
+    : `${john.firstName}'s BMI (${john.bmi}) is higher than ${mark.firstName}'s (${mark.bmi})!`
 );
 
-/* using if-else: */
+/* using if-else with calcBMI() method(function) instead of bmi property => anyway, the result at the end is the same!*/
 if (mark.calcBMI() > john.calcBMI()) {
   console.log(
     `${mark.firstName} ${
