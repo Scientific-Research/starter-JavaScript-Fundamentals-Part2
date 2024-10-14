@@ -367,28 +367,48 @@ const jonas_new = {
 
   /* add a function to the object: */
   /* key : value */
+
+  /* 1. */
   // calcAge: function (birthYear) {
   //   return 2037 - birthYear;
+  // },
+
+  /* 2. */
+  // calcAge: function () {
+  //   return 2037 - this.birthYear;
+  // },
+
+  /* 3. */
+  // calcAge: function () {
+  //   this.age = 2037 - this.birthYear;
+  //   return this.age;
   // },
 
   /* using "this" keyword and removing the "birthday" as input parameter! */
   /* when we use "this" keyword, it takes 1991 as birthYear from above birthYear as object parameter, that's why we don't need to allocate the birthYear again here as input parameter!  */
   calcAge: function () {
-    console.log(
-      this
-    ); /* "this" actually means "jonas_new" here, but using the "this" keyword, we follow the DRY(don't repeat yourself) rule and also when we change the name of the object, then we don't need to hard code this name again and we use simply "this" keyword which does the same for us!*/
-    console.log(jonas_new);
+    // console.log(this);
+    /* "this" actually means "jonas_new" here, but using the "this" keyword, we follow the DRY(don't repeat yourself) rule and also when we change the name of the object, then we don't need to hard code this name again and we use simply "this" keyword which does the same for us!*/
+    // console.log(jonas_new);
     /* that's why these two statements(console.log(this) , console.log(jonas_new)) have the same results! */
 
-    return 2037 - this.birthYear;
+    // return 2037 - this.birthYear;
+    this.age = 2037 - this.birthYear;
+    /* this is like jonas.age = 2037 - this.birthYear; it means i created a new property called age in jonas_new object */
+    return this.age;
   },
 };
-console.log(jonas_new);
+// console.log(jonas_new);
 // console.log(jonas_new.calcAge(1991));
 // console.log(jonas_new["calcAge"](1991));
 
 /* without the year as input argument and using "this" parameter above in the method(function)!  */
 console.log(jonas_new.calcAge());
+
+console.log(jonas_new.age);
+/* instead of using again and again the calcAge() to get the age, as we see above, we can use the "this" keyword and age(this.age) and create a new property called age in jonas_new object and use this property to get the age!   */
+console.log(jonas_new.age);
+console.log(jonas_new.age);
 
 /* without the year as input argument and using "this" parameter above in the method(function)!  */
 console.log(jonas_new["calcAge"]());
