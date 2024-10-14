@@ -41,3 +41,16 @@ console.log(
 );
 
 /* using if-else: */
+if (mark.calcBMI() > john.calcBMI()) {
+  console.log(
+    `${mark.firstName}'s BMI (${mark.calcBMI()}) is higher than ${
+      john.firstName
+    }'s (${john.calcBMI()})!`
+  );
+} else {
+  console.log(
+    `${john.firstName}'s BMI (${john.calcBMI()}) is higher than ${
+      mark.firstName
+    }'s (${mark.calcBMI()})!`
+  );
+}
