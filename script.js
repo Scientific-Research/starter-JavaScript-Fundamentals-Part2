@@ -479,3 +479,14 @@ console.log("////getting the elements in the array using forEach loop:////");
 JonsArray_new.forEach((element) => {
   console.log(element, typeof element);
 });
+
+/* A new Practical example: */
+const years_neu = [1991, 2007, 1969, 2020];
+
+const age_neue = [];
+
+for (let i = 0; i < years_neu.length; i++) {
+  const currentYear = new Date().getFullYear();
+  age_neue[i] = currentYear - years_neu[i];
+}
+console.log(age_neue);
