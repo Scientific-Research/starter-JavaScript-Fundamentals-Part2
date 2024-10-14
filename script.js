@@ -363,7 +363,7 @@ const jonas_new = {
   birthYear: 1991,
   job: "teacher",
   friends: ["Michael", "Peter", "Steven"],
-  hasDriversLicense: true,
+  hasDriversLicense: false,
 
   /* add a function to the object: */
   /* key : value */
@@ -398,12 +398,17 @@ const jonas_new = {
     return this.age;
   },
 
-  /* writing a new method(finction) for the challenge: */
+  /* writing a new method(function) for the challenge: */
   getSummary: function () {
-    this.info = `${this.firstName} is a ${this.age}-years old ${
+    // this.info = `${this.firstName} is a ${this.calcAge()}-years old ${
+    //   this.job
+    // }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+    // return this.info;
+
+    /* or without info as variable and send it directly using only the return: */
+    return `${this.firstName} is a ${this.calcAge()}-years old ${
       this.job
-    }, and he ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
-    return this.info;
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
   },
 };
 // console.log(jonas_new);
@@ -426,7 +431,7 @@ console.log(jonas_new["calcAge"]());
 // console.log(
 //   `${jonas_new.firstName} is a ${jonas_new.age}-years old ${
 //     jonas_new.job
-//   }, and he ${jonas_new.hasDriversLicense ? "a" : "no"} driver's license.`
+//   }, and he has ${jonas_new.hasDriversLicense ? "a" : "no"} driver's license.`
 // );
 
 // console.log(jonas_new.getSummary());
