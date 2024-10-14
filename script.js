@@ -412,3 +412,11 @@ console.log(jonas_new.age);
 
 /* without the year as input argument and using "this" parameter above in the method(function)!  */
 console.log(jonas_new["calcAge"]());
+
+/* a new challenge: */
+// "Jonas is a 46-years old teacher, and he has a/no driver's license."
+console.log(
+  `${jonas_new.firstName} is a ${jonas_new.age}-years old ${
+    jonas_new.job
+  }, and he ${jonas_new.hasDriversLicense ? "a" : "no"} driver's license.`
+);
