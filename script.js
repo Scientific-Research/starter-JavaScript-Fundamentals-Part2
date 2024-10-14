@@ -483,7 +483,7 @@ JonsArray_new.forEach((element) => {
 /* A new Practical example: */
 const years_neu = [1991, 2007, 1969, 2020];
 
-const age_neue = [];
+let age_neue = [];
 
 for (let i = 0; i < years_neu.length; i++) {
   const currentYear = new Date().getFullYear();
@@ -491,6 +491,17 @@ for (let i = 0; i < years_neu.length; i++) {
   // age_neue[i] = currentYear - years_neu[i];
 
   /* 2. second method */
-  age_neue.push(currentYear - years_neu[i]);
+  // age_neue.push(currentYear - years_neu[i]);
 }
+console.log(age_neue);
+
+/* using forEach to solve this problem: */
+years_neu.forEach((element, i) => {
+  const currentYear = new Date().getFullYear();
+  /* first method: */
+  // age_neue[i] = currentYear - element;
+
+  /* second method: */
+  age_neue.push(currentYear - element);
+});
 console.log(age_neue);
