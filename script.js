@@ -360,18 +360,29 @@ console.log(
 const jonas_new = {
   firstName: "Jonas",
   lastName: "Schmedtmann",
-  age: 1991,
+  birthYear: 1991,
   job: "teacher",
   friends: ["Michael", "Peter", "Steven"],
   hasDriversLicense: true,
 
   /* add a function to the object: */
   /* key : value */
-  calcAge: function (birthYear) {
-    return 2037 - birthYear;
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  /* using "this" keyword and removing the "birthday" as input parameter! */
+  /* when we use "this" keyword, it takes 1991 as birthYear from above birthYear as object parameter, that's why we don't need to allocate the birthYear again here as input parameter!  */
+  calcAge: function () {
+    return 2037 - this.birthYear;
   },
 };
 console.log(jonas_new);
-console.log(jonas_new.calcAge(1991));
-console.log(jonas_new["calcAge"](1991));
-console.log(jonas_new["firstName"]);
+// console.log(jonas_new.calcAge(1991));
+// console.log(jonas_new["calcAge"](1991));
+
+/* without the year as input argument and using "this" parameter above in the method(function)!  */
+console.log(jonas_new.calcAge());
+
+/* without the year as input argument and using "this" parameter above in the method(function)!  */
+console.log(jonas_new["calcAge"]());
