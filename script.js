@@ -549,3 +549,18 @@ for (let i = 1; i <= 3; i++) {
     console.log(i, "lifting " + j);
   }
 }
+
+/* WHILE Loop */
+/* Starting with loops: */
+for (let i = 1; i <= 10; i++) {
+  // console.log("Lifting weights repetition " + i + "🏋️‍♂️");
+  console.log(`Lifting weights repetition ${i} 🏋️‍♂️`);
+}
+
+console.log("------WHILE LOOP----------");
+/* Doing the same with WHILE loop: */
+let f = 0;
+while (f <= 10) {
+  console.log(`Lifting weights repetition ${f} 🏋️‍♂️`);
+  f++;
+}
