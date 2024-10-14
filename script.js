@@ -463,9 +463,13 @@ for (let i = 0; i < JonsArray_new.length; i++) {
 console.log("////getting the type of the elements using for loop:////");
 let typeArray = [];
 for (let j = 0; j < JonsArray_new.length; j++) {
-  let typeArray = typeof JonsArray_new[j];
-  console.log(typeArray);
+  /* 1. first method */
+  // typeArray[j] = typeof JonsArray_new[j];
+
+  /* 2. second method */
+  typeArray.push(typeof JonsArray_new[j]);
 }
+console.log(typeArray);
 
 console.log("////getting the elements in the array using forEach loop:////");
 /* doing the same using forEach */
