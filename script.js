@@ -537,6 +537,6 @@ const JonsArray_new_1 = [
   true,
 ];
 console.log("-----Looping Backwards-------");
-for (let i = JonsArray_new_1.length; i >= 0; i--) {
+for (let i = JonsArray_new_1.length - 1; i >= 0; i--) {
   console.log(JonsArray_new_1[i], typeof JonsArray_new_1[i]);
 }
