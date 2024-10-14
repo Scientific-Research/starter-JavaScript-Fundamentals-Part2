@@ -559,7 +559,7 @@ for (let i = 1; i <= 10; i++) {
 
 console.log("------WHILE LOOP----------");
 /* Doing the same with WHILE loop: */
-let f = 0;
+let f = 1;
 while (f <= 10) {
   console.log(`Lifting weights repetition ${f} 🏋️‍♂️`);
   f++;
