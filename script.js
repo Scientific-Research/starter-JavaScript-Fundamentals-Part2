@@ -544,7 +544,7 @@ for (let i = JonsArray_new_1.length - 1; i >= 0; i--) {
 
 /* Exmaple about the loop inside another loop: */
 for (let i = 1; i <= 3; i++) {
-  console.log("-----------");
+  console.log("----------- Starting round " + i + " -----------");
   for (let j = 1; j <= 5; j++) {
     console.log(i, "lifting " + j);
   }
