@@ -354,3 +354,24 @@ console.log(
 
 // console.log(Jonas.nameOFHisBestFriend);
 // console.log(Jonas["nameOFHisBestFriend"]);
+
+/* Object Methods: */
+/* we can hold all different data taypes in an object: */
+const jonas_new = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: true,
+
+  /* add a function to the object: */
+  /* key : value */
+  calcAge: function (birthYear) {
+    return 2037 - birthYear;
+  },
+};
+console.log(jonas_new);
+console.log(jonas_new.calcAge(1991));
+console.log(jonas_new["calcAge"](1991));
+console.log(jonas_new["firstName"]);
