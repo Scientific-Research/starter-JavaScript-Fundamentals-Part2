@@ -397,6 +397,14 @@ const jonas_new = {
     /* this is like jonas.age = 2037 - this.birthYear; it means i created a new property called age in jonas_new object */
     return this.age;
   },
+
+  /* writing a new method(finction) for the challenge: */
+  getSummary: function () {
+    this.info = `${this.firstName} is a ${this.age}-years old ${
+      this.job
+    }, and he ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+    return this.info;
+  },
 };
 // console.log(jonas_new);
 // console.log(jonas_new.calcAge(1991));
@@ -415,8 +423,11 @@ console.log(jonas_new["calcAge"]());
 
 /* a new challenge: */
 // "Jonas is a 46-years old teacher, and he has a/no driver's license."
-console.log(
-  `${jonas_new.firstName} is a ${jonas_new.age}-years old ${
-    jonas_new.job
-  }, and he ${jonas_new.hasDriversLicense ? "a" : "no"} driver's license.`
-);
+// console.log(
+//   `${jonas_new.firstName} is a ${jonas_new.age}-years old ${
+//     jonas_new.job
+//   }, and he ${jonas_new.hasDriversLicense ? "a" : "no"} driver's license.`
+// );
+
+// console.log(jonas_new.getSummary());
+console.log(jonas_new.getSummary());
