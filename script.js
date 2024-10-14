@@ -515,3 +515,13 @@ for (let i = 0; i < JonsArray_new.length; i++) {
   }
   console.log(JonsArray_new[i], typeof JonsArray_new[i]);
 }
+
+/* An example for the break: when it finds a number, all the elements after that will be ignored! */
+console.log("-----BREAK----------");
+for (let i = 0; i < JonsArray_new.length; i++) {
+  if (typeof JonsArray_new[i] === "number") {
+    break;
+    /* when the program finds the first type of the element which is number, it will quit the for loop completely and not only the current iteration => that's why the below statement will be ignored completely and program will be terminated!! */
+  }
+  console.log(JonsArray_new[i], typeof JonsArray_new[i]);
+}
