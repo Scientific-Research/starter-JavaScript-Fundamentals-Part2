@@ -40,8 +40,10 @@ console.log(mark.bmi);
 /* using Ternary operator: */
 console.log(
   `${mark.calcBMI()}` > `${john.calcBMI()}`
-    ? `${mark.firstName}'s BMI (${mark.calcBMI()}) is higher than ${
-        john.firstName
+    ? `${mark.firstName} ${
+        mark.lastName
+      }'s BMI (${mark.calcBMI()}) is higher than ${john.firstName} ${
+        john.lastName
       }'s (${john.calcBMI()})!`
     : `${john.firstName}'s BMI (${john.calcBMI()}) is higher than ${
         mark.firstName
@@ -51,8 +53,10 @@ console.log(
 /* using if-else: */
 if (mark.calcBMI() > john.calcBMI()) {
   console.log(
-    `${mark.firstName}'s BMI (${mark.calcBMI()}) is higher than ${
-      john.firstName
+    `${mark.firstName} ${
+      mark.lastName
+    }'s BMI (${mark.calcBMI()}) is higher than ${john.firstName} ${
+      john.lastName
     }'s (${john.calcBMI()})!`
   );
 } else {
