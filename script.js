@@ -455,10 +455,11 @@ const JonsArray_new = [
 
 console.log("////getting the elements in the array using for loop:////");
 for (let i = 0; i < JonsArray_new.length; i++) {
-  console.log(`${JonsArray_new[i]}`);
+  console.log(JonsArray_new[i]);
 }
+
 console.log("////getting the elements in the array using forEach loop:////");
 /* doing the same using forEach */
 JonsArray_new.forEach((element) => {
-  console.log(`${element}`);
+  console.log(element);
 });
