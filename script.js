@@ -374,6 +374,12 @@ const jonas_new = {
   /* using "this" keyword and removing the "birthday" as input parameter! */
   /* when we use "this" keyword, it takes 1991 as birthYear from above birthYear as object parameter, that's why we don't need to allocate the birthYear again here as input parameter!  */
   calcAge: function () {
+    console.log(
+      this
+    ); /* "this" actually means "jonas_new" here, but using the "this" keyword, we follow the DRY(don't repeat yourself) rule and also when we change the name of the object, then we don't need to hard code this name again and we use simply "this" keyword which does the same for us!*/
+    console.log(jonas_new);
+    /* that's why these two statements(console.log(this) , console.log(jonas_new)) have the same results! */
+
     return 2037 - this.birthYear;
   },
 };
