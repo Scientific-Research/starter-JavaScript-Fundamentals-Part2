@@ -505,3 +505,14 @@ years_neu.forEach((element, i) => {
   age_neue.push(currentYear - element);
 });
 console.log(age_neue);
+
+/* continue and break */
+console.log("////using continue and break:////");
+for (let i = 0; i < JonsArray_new.length; i++) {
+  if (typeof JonsArray_new[i] === "string") {
+    console.log(JonsArray_new[i], typeof JonsArray_new[i]);
+  } else {
+    continue;
+    /* it doesn't quit the for loop, rather, it exits the current iteration of the for loop and continue the for loop from next iteration! */
+  }
+}
