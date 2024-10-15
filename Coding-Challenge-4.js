@@ -4,6 +4,7 @@ console.log("Coding Challenge Nr.4...");
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 
 /* 2. */
+console.log("--------first Solution uisng normal for-------");
 const tips = [];
 const totals = [];
 
@@ -25,3 +26,20 @@ const calcTip = (bills4) => {
 };
 
 console.log(calcTip(bills));
+
+/* second solution using the foreach loop: */
+console.log("--------second Solution uisng foreach-------");
+let tips_new = [];
+let totals_new = [];
+
+const calcTip_new = (bills5) => {
+  bills5.forEach((bill, i) => {
+    tips_new[i] = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+    totals_new[i] = tips_new[i] + bill;
+  });
+  console.log(tips_new, totals_new);
+  return `${tips_new} ${totals_new}`;
+};
+
+console.log(calcTip_new(bills));
