@@ -14,7 +14,9 @@ const calcTip = (bills4) => {
     tips[i] =
       bills4[i] >= 50 && bills4[i] <= 300 ? bills4[i] * 0.15 : bills4[i] * 0.2;
 
-    totals[i] = tips[i] + bills4[i];
+    // totals[i] = tips[i] + bills4[i];
+    /* or using the push method: */
+    totals.push(tips[i] + bills4[i]);
   }
   console.log(tips);
   console.log(totals);
@@ -36,7 +38,9 @@ const calcTip_new = (bills5) => {
   bills5.forEach((bill, i) => {
     tips_new[i] = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
-    totals_new[i] = tips_new[i] + bill;
+    // totals_new[i] = tips_new[i] + bill;
+    /* or using the push method: */
+    totals_new.push(tips_new[i] + bill);
   });
   console.log(tips_new, totals_new);
   return `${tips_new} ${totals_new}`;
