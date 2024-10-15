@@ -54,7 +54,8 @@ const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const calcAverage = (arr_input) => {
   let sum = 0;
   for (i = 0; i <= arr_input.length - 1; i++) {
-    sum = sum + arr_input[i];
+    // sum = sum + arr_input[i];
+    sum += arr_input[i];
     console.log(sum);
   }
   const arrAverage = sum / arr_input.length;
