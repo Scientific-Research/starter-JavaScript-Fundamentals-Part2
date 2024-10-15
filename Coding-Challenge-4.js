@@ -48,16 +48,21 @@ const calcTip_new = (bills5) => {
 
 console.log(calcTip_new(bills));
 
-/* Bonus: */
+/* Bonus: This is a GENERAL FUNCTION to claculate the sum and tHe avaerage of the numbers in an array:*/
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let sum = 0;
 
 const calcAverage = (arr_input) => {
+  let sum = 0;
   for (i = 0; i <= arr_input.length - 1; i++) {
     sum = sum + arr_input[i];
+    console.log(sum);
   }
-  const arrAverage = sum / arr.length;
-  return `The sum of the number in the array is: ${sum} and the average of these numbers is: ${arrAverage}`;
+  const arrAverage = sum / arr_input.length;
+  return `The sum of the numbers is: ${sum} 
+  and the average of the numbers is: ${arrAverage}`;
 };
-
 console.log(calcAverage(arr));
+
+/* Bonus => Call the function with the 'totals array: */
+console.log(calcAverage(totals));
+console.log(calcAverage(bills));
