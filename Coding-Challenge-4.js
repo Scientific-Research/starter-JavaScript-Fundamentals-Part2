@@ -58,12 +58,13 @@ const calcAverage = (arr_input) => {
     sum += arr_input[i];
     console.log(sum);
   }
-  const arrAverage = (sum.toFixed(2) / arr_input.length).toFixed(2);
-  return `The sum of the numbers is: ${sum} 
-  and the average of the numbers is: ${arrAverage}`;
+  const arrAverage = sum / arr_input.length;
+  return `The sum of the numbers is: ${sum.toFixed(2)} 
+  and the average of the numbers is: ${arrAverage.toFixed(2)}`;
 };
 console.log(calcAverage(arr));
 
 /* Bonus => Call the function with the 'totals array: */
 console.log(calcAverage(totals));
+console.log(calcAverage(tips));
 console.log(calcAverage(bills));
